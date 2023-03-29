@@ -56,7 +56,7 @@ jobs:
         run: docker build -t dkssud9556/venus:test .
 
       - name: upload to registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: dkssud9556/venus
           username: ${{ secrets.DOCKER_USERNAME }}
